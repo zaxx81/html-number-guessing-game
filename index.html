@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TITLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Your link to your CSS file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- Your Javascript file goes here -->
+  <script src="app.js" async defer></script>
+</head>
+<body>
+<!-- your HTML should go here -->
+  <nav>
+    <h1>Let's Play the Guessing Number Game!</h1>
+  </nav>
+  <main class="container">
+    <div class="row">
+      <div class="col" id="input-area">
+        <label for="fldGuess">Guess a number (1-100):</label>
+        <input type="number" id="fldGuess" class="fldGuess" title="gussing-number" min="1" max="100">
+        </input>
+        <button type="submit" value="Submit Guess" class="btnGuess">Guess</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" id="output-area">
+        <p class="guesses"></p>
+        <p class="lastGuess"></p>
+        <p class="lastGuessOutput"></p>
+      </div>
+    </div>  
+  </main>
+</body>
+</html>
